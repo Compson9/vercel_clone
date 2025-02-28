@@ -1,6 +1,7 @@
 import Chart from "./components/Chart";
 import Collaborative from "./components/Collaborative";
 import Enterprise from "./components/Enterprise";
+import { Globe } from "./components/Globe";
 import MainHero from "./components/MainHero";
 import MiniHero from "./components/MiniHero";
 import Navbar from "./components/Navbar";
@@ -19,6 +20,7 @@ export default function Home() {
    <Chart/>
    <Rollback/>
    <Enterprise/>
+   <Globe/>
    </div>
   );
 }
