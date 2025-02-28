@@ -25,7 +25,7 @@ export function CodeBlock1() {
   `;
 
   return (
-    <div className="w-[422px] mx-auto ">
+    <div className="w-[622px] mx-auto ">
       <CodeBlock
         language="tsx"
         filename="app/user/page.tsx"
