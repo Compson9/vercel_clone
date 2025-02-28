@@ -21,8 +21,9 @@ export default function MiniHero() {
           </h1>
           <p className="text-white opacity-50">The power of servers in serverless forms</p>
           <Button1
-            className="bg-white hover:border hover:border-white text-black p-4 rounded-4xl hover:bg-black hover:text-white"
-            title="Learn more"
+            className="bg-white hover:border cursor-pointer hover:border-white text-black p-4 rounded-4xl hover:bg-black hover:text-white"
+             title="Learn more"
+            
           />
         </div>
       </div>

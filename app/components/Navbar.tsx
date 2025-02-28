@@ -53,13 +53,13 @@ export default function Navbar() {
             </div>
           </div>
           <div className="absolute inset-y-0 right-0 flex gap-4 items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-          <button className='text-white px-4 py-2 text-[12px] opacity-70  border-gray-500 border-[0.1px] rounded-md'>
+          <button className='text-white px-4 py-2 text-[12px] cursor-pointer hover:bg-white hover:text-black opacity-80 hidden lg:block border-gray-500 border-[0.1px] rounded-md'>
                Log In
             </button>
-            <button className='text-white px-4 py-2 text-[12px] opacity-70 border-gray-500 border-[0.1px] rounded-md'>
+            <button className='text-white px-4 py-2 text-[12px] hover:bg-white hover:text-black cursor-pointer opacity-70 hidden lg:block border-gray-500 border-[0.1px] rounded-md'>
                Contact
             </button>
-            <button className='text-black px-4 py-2 text-[12px] font-semibold bg-white  border-white border-[0.1px] rounded-md'>
+            <button className='text-black px-4 py-2 text-[12px] cursor-pointer font-semibold hidden lg:block bg-white hover:bg-gray-200  border-white border-[0.1px] rounded-md'>
                Sign Up
             </button>
 

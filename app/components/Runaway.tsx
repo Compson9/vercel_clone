@@ -22,7 +22,7 @@ export default function Runaway() {
         </div>
         <div className="left mt-0 lg:mt-[-50px] max-w-[260px]">
             <p className='text-white'>Get started using our pre-built templates. Easily stream long- running LLM responses for a better user experience with zero-config infrastructure thats always globally performant.</p>
-            <button className='bg-white flex cursor-pointer mt-5 justify-center items-center gap-2 px-6 py-2 rounded-4xl'>
+            <button className='bg-white text-black flex cursor-pointer mt-5 justify-center items-center gap-2 px-6 py-2 rounded-4xl'>
                 Deploy Ai Aps in seconds
                 <Image src="/star.png" alt='star' height={20} width={20}/>
             </button>
