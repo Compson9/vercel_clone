@@ -395,8 +395,8 @@ export function Globe() {
   ];
 
   return (
-    <div className=" flex-row className='m-16 p-20 border-gray-600 gap-32  flex border-[0.01px]'  items-center justify-center py-20  bg-black relative h-full w-full">
-      <div className="max-w-7xl mx-auto w-full relative overflow-hidden h-full md:h-[40rem] px-4">
+    <div className=" flex-row m-16 p-20 border-gray-600 gap-32  flex border-[0.01px] items-center justify-center py-20  bg-black relative h-screen  w-[1079px]">
+      <div className="max-w-7xl mx-auto w-full  overflow-hidden md:h-[40rem] px-4">
         <motion.div
           initial={{
             opacity: 0,
@@ -412,7 +412,7 @@ export function Globe() {
           className="div"
         >
          
-          <p className="text-center w-[721px] text-[18px] md:text-lg font-normal text-white dark:text-neutral-200 max-w-md mt-2 mx-auto">
+          <p className="text-center w-[721px] text-[18px] md:text-lg font-normal text-white  max-w-md mt-20 mx-auto">
           Deploy once, deliver everywhere. <span className='text-gray-500 font-semibold'>When you push code to Vercel, we
            make it instantly available across the plane</span> 
           </p>
