@@ -1,5 +1,6 @@
 import Chart from "./components/Chart";
 import Collaborative from "./components/Collaborative";
+import Enterprise from "./components/Enterprise";
 import MainHero from "./components/MainHero";
 import MiniHero from "./components/MiniHero";
 import Navbar from "./components/Navbar";
@@ -17,6 +18,7 @@ export default function Home() {
    <Collaborative/>
    <Chart/>
    <Rollback/>
+   <Enterprise/>
    </div>
   );
 }
