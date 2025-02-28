@@ -2,6 +2,7 @@ import Chart from "./components/Chart";
 import CodeBase from "./components/CodeBase";
 import Collaborative from "./components/Collaborative";
 import Enterprise from "./components/Enterprise";
+import Framework from "./components/Framework";
 import { Globe } from "./components/Globe";
 import MainHero from "./components/MainHero";
 import MiniHero from "./components/MiniHero";
@@ -23,6 +24,7 @@ export default function Home() {
    <Enterprise/>
    <Globe/>
    <CodeBase />
+   <Framework />
    </div>
   );
 }
