@@ -1,3 +1,4 @@
+import Collaborative from "./components/Collaborative";
 import MainHero from "./components/MainHero";
 import MiniHero from "./components/MiniHero";
 import Navbar from "./components/Navbar";
@@ -11,6 +12,7 @@ export default function Home() {
    <MiniHero/>
    <MainHero/>
    <Runaway/>
+   <Collaborative/>
 
    </div>
   );
