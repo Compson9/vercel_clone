@@ -1,3 +1,4 @@
+import Chart from "./components/Chart";
 import Collaborative from "./components/Collaborative";
 import MainHero from "./components/MainHero";
 import MiniHero from "./components/MiniHero";
@@ -13,7 +14,7 @@ export default function Home() {
    <MainHero/>
    <Runaway/>
    <Collaborative/>
-
+   <Chart/>
    </div>
   );
 }

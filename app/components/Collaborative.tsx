@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function Collaborative() {
   return (
-    <div className='m-24 p-20 border-gray-600 gap-32  w-[1079px] h-[578px] flex justify-between items-center border-[0.01px]'>
+    <div className='m-16 p-20 border-gray-600 gap-32  w-[1079px] h-[578px] flex justify-between items-center border-[0.01px]'>
         <div className='left w-[442px] h-[481px]'>
             <div className='flex mr-24 gap-4 mb-2 '> 
                 <Image
