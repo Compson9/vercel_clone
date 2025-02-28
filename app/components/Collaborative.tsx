@@ -14,7 +14,7 @@ export default function Collaborative() {
                 />
                 <p className='opacity-90 text-gray-300'>Git-connected Deploys</p>
             </div>
-            <p  className='text-white max-w-[374px] font-semibold text-[19px] mt-4'>From localhost to https, in <br /> seconds. <br />
+            <p  className='text-white max-w-[442px] font-semibold text-[18px] mt-4'>From localhost to https, in seconds. <br />
            <span className='text-gray-500 font-semibold'>Deploy from Git or your CLI.</span> 
            </p>
             <div className='mt-12'>
@@ -35,8 +35,8 @@ export default function Collaborative() {
             </div>
 
             <div>
-            <p  className='text-white max-w-[374px] font-semibold text-[18px] mt-4'>Every deploy is remarkable. <span className='text-gray-500 font-semibold'>Chat with</span><br /> <span className='text-gray-500 font-semibold'>your team on real, production-grade UI,</span> <br /> <span className='text-gray-500 font-semibold'>not</span> <br />
-           <span className='text-gray-500 font-semibold'>just designs</span> 
+            <p  className='text-white max-w-[374px] font-semibold text-[18px] mt-4'>Every deploy is remarkable. <span className='text-gray-500 font-semibold'>Chat with</span> <br /> <span className='text-gray-500 font-semibold'>your team on real, production-grade UI, not</span> <br /> <span className='text-gray-500 font-semibold'>just designs</span>
+           
            </p>
             </div>
            
