@@ -7,14 +7,14 @@ import React from "react";
 // Runaway component definition
 export default function Runaway() {
   return (
-    <div className="bg-black flex flex-col lg:flex-row gap-4 lg:gap-40 m-32">
+    <div className="bg-black flex flex-col lg:flex-row gap-4 lg:gap-10 m-32">
       {/* Right Section */}
       <motion.div
         initial={{ opacity: 0, x: -50 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
         viewport={{ once: true }}
-        className="right flex w-[919px] gap-10">
+        className="right flex w-[719px] gap-10">
         <div className="flex flex-col gap-5">
           <motion.p
             initial={{ opacity: 0, y: 20 }}
