@@ -11,15 +11,15 @@ export default function Runaway() {
       {/* Right Section */}
       <motion.div
         initial={{ opacity: 0, x: -50 }}
-        whileInView={{ opacity: 1, x: 0 }} 
-        transition={{ duration: 0.8, ease: "easeOut" }} 
-        viewport={{ once: true }} 
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        viewport={{ once: true }}
         className="right flex w-[919px] gap-10">
         <div className="flex flex-col gap-5">
           <motion.p
-            initial={{ opacity: 0, y: 20 }} 
-            whileInView={{ opacity: 1, y: 0 }} 
-            transition={{ duration: 0.8, delay: 0.2 }} 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
             className="text-gray-500 leading-8 text-[22px]">
             <span className="font-extrabold text-[22px] text-white">
               run away
@@ -44,7 +44,9 @@ export default function Runaway() {
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }} // Initial animation state
             whileInView={{ opacity: 1, scale: 1 }} // Animation state when in view
-            transition={{ duration: 0.8, delay: 0.4 }}> // Animation duration and delay
+            transition={{ duration: 0.8, delay: 0.4 }}>
+            {" "}
+            
             <Image
               src="/tab.png"
               height={500}
@@ -72,7 +74,7 @@ export default function Runaway() {
         <motion.button
           initial={{ opacity: 0, scale: 0.9 }} // Initial animation state
           whileInView={{ opacity: 1, scale: 1 }} // Animation state when in view
-          transition={{ duration: 0.8, delay: 0.6 }} 
+          transition={{ duration: 0.8, delay: 0.6 }}
           className="bg-white text-black flex cursor-pointer mt-5 justify-center items-center gap-6 px-8 py-3 text-[12px] font-semibold rounded-4xl">
           Deploy AI Apps in seconds
           <Image src="/star.png" alt="star" height={20} width={20} />
