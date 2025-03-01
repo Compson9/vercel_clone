@@ -1,6 +1,7 @@
 import Chart from "./components/Chart";
 import CodeBase from "./components/CodeBase";
 import Collaborative from "./components/Collaborative";
+import Deploy from "./components/Deploy";
 import Enterprise from "./components/Enterprise";
 import Framework from "./components/Framework";
 import { Globe } from "./components/Globe";
@@ -26,6 +27,7 @@ export default function Home() {
       <CodeBase />
       <Framework />
       <Reliability/>
+      <Deploy/>
     </div>
   );
 }
