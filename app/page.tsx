@@ -4,6 +4,7 @@ import Collaborative from "./components/Collaborative";
 import Deploy from "./components/Deploy";
 import Enterprise from "./components/Enterprise";
 import Expert from "./components/Expert";
+import Footer from "./components/Footer";
 import Framework from "./components/Framework";
 import { Globe } from "./components/Globe";
 import MainHero from "./components/MainHero";
@@ -30,6 +31,7 @@ export default function Home() {
       <Reliability/>
       <Deploy/>
       <Expert/>
+      <Footer/>
     </div>
   );
 }
