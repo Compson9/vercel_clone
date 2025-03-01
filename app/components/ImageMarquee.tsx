@@ -10,14 +10,14 @@ export default function ImageMarquee() {
       {/* First column */}
       <Marquee vertical pauseOnHover className="[--duration:15s] w-[330px] h-[500px]">
         {images1.map((src, index) => (
-          <Image key={index} src={src} width={330} height={170} alt="Tech Logo" className="cursor-pointer" />
+          <Image key={index} src={src} width={330} height={170} alt="Tech Logo" className="cursor-pointer hover:opacity-70" />
         ))}
       </Marquee>
 
       {/* Second column (Reverse Direction) */}
       <Marquee vertical reverse pauseOnHover className="[--duration:15s] w-[330px] h-[500px]">
         {images2.map((src, index) => (
-          <Image key={index} src={src} width={330} height={170} alt="Tech Logo" className="cursor-pointer" />
+          <Image key={index} src={src}  width={330} height={170} alt="Tech Logo" className="cursor-pointer hover:opacity-70" />
         ))}
       </Marquee>
     </div>
