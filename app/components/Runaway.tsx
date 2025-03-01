@@ -72,7 +72,7 @@ export default function Runaway() {
         <motion.button
           initial={{ opacity: 0, scale: 0.9 }} // Initial animation state
           whileInView={{ opacity: 1, scale: 1 }} // Animation state when in view
-          transition={{ duration: 0.8, delay: 0.6 }} // Animation duration and delay
+          transition={{ duration: 0.8, delay: 0.6 }} 
           className="bg-white text-black flex cursor-pointer mt-5 justify-center items-center gap-6 px-8 py-3 text-[12px] font-semibold rounded-4xl">
           Deploy AI Apps in seconds
           <Image src="/star.png" alt="star" height={20} width={20} />
