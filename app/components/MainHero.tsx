@@ -7,7 +7,7 @@ import { Button1 } from "./Button";
 // MainHero component definition
 export default function MainHero() {
   return (
-    <div className="bg-black mt-5">
+    <div className="bg-black m-16 mt-5">
       <div
         style={{
           backgroundImage: "url('/main1.png')", // Background image for the hero section
@@ -15,7 +15,7 @@ export default function MainHero() {
           backgroundPosition: "center", // Center the background image
           height: "600px", // Match original image height
           position: "relative", // For positioning child elements
-          width: "100%", // Full width
+          width: "1079px", // Full width
         }}>
         <motion.div
           initial={{ opacity: 0, y: 50 }} // Initial animation state

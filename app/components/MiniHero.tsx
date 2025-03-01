@@ -5,7 +5,7 @@ import { TypingAnimation1 } from "./TypingAnimation";
 // MiniHero component definition
 export default function MiniHero() {
   return (
-    <div className="bg-black ">
+    <div className="bg-black m-24">
       <div
         style={{
           backgroundImage: "url('/mini.png')", // Background image for the hero section
@@ -13,7 +13,7 @@ export default function MiniHero() {
           backgroundPosition: "center", // Center the background image
           height: "400px", // Match original image height
           position: "relative", // For positioning child elements
-          width: "100%", // Full width
+          width: "1079px", // Full width
         }}
       >
         <div className="flex justify-center items-center flex-col gap-4 p-8 absolute inset-0">
