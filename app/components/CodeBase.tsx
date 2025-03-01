@@ -4,7 +4,7 @@ import { IconCloud1 } from "./IconCloud";
 
 export default function CodeBase() {
   return (
-    <div className="flex justify-center gap-16 items-center w-[1079px] h-[678px] p-20 mt-32 mx-24">
+    <div className="flex flex-col lg:flex-row justify-center gap-28 items-center w-[900px] h-[678px] p-20 mt-32 mx-24">
       <div className="left w-[719px]  h-[705px] ml-20">
         <div className="code">
           <CodeBlock1 />
