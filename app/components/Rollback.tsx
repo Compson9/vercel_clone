@@ -1,98 +1,81 @@
-"use client"
-import React from "react";
-import { motion } from "framer-motion";
-import Card from "./Card";
 import Image from "next/image";
+import React from "react";
 
-export default function Reliability() {
+export default function Rollback() {
   return (
-    <div className="m-16 p-20 border-gray-600 gap-5 w-[1079px] h-[678px] flex flex-col border-[0.01px]">
-      <motion.div 
-        className="first"
-        initial={{ opacity: 0, y: -20 }} 
-        animate={{ opacity: 1, y: 0 }} 
-        transition={{ duration: 0.8 }}
-        viewport={{ once: true }}
-      >
-        <h1 className="text-white text-3xl ml-10 font-semibold">
-          Reliability you can count on.
-        </h1>
-      </motion.div>
-      <div className="second flex mr-16 justify-center items-center gap-10">
-        {[{
-          icon: "scale",
-          title: "Elastic Scalability",
-          description: "Handle unbelievable scale without a sweat, whether you’re on Fortune 500, or it’s your launch day."
-        }, {
-          icon: "shield-check",
-          title: "Rock-solid security",
-          description: "Infrastructure designed to automatically mitigate DDoS attacks and protect your information."
-        }].map((item, index) => (
-          <motion.div 
-            key={index}
-            className="Card flex p-10 flex-col gap-4 w-[358px] h-[236px]"
-            initial={{ opacity: 0, y: 20 }} 
-            animate={{ opacity: 1, y: 0 }} 
-            transition={{ duration: 0.8, delay: index * 0.2 }}
-            viewport={{ once: true }}
-          >
-            <div>
-              <div className="flex gap-3">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="gray" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={`lucide lucide-${item.icon}`}>
-                  {item.icon === "scale" ? (
-                    <>
-                      <path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z" />
-                      <path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z" />
-                      <path d="M7 21h10" />
-                      <path d="M12 3v18" />
-                      <path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2" />
-                    </>
-                  ) : (
-                    <>
-                      <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" />
-                      <path d="m9 12 2 2 4-4" />
-                    </>
-                  )}
-                </svg>
-                <p className="text-gray-500 text-left">{item.title}</p>
-              </div>
-              <p className="text-white text-left text-[16px] mt-5">{item.description}</p>
-            </div>
-          </motion.div>
-        ))}
-        <motion.div
-          initial={{ opacity: 0, scale: 0.9 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.8, delay: 0.4 }}
-          viewport={{ once: true }}
-        >
-          <Image src="/uptime.png" alt="uptime image" width={358} height={236} />
-        </motion.div>
-      </div>
-      <motion.div 
-        className="third flex mr-16 justify-center items-center gap-10"
-        initial={{ opacity: 0, y: 20 }} 
-        animate={{ opacity: 1, y: 0 }} 
-        transition={{ duration: 0.8, delay: 0.6 }}
-        viewport={{ once: true }}
-      >
-        <div className="Card flex p-10 flex-col gap-4 w-[358px] h-[236px]">
-          <div>
-            <div className="flex gap-3">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="gray" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-globe-lock">
-                <path d="M15.686 15A14.5 14.5 0 0 1 12 22a14.5 14.5 0 0 1 0-20 10 10 0 1 0 9.542 13" />
-                <path d="M2 12h8.5" />
-                <path d="M20 6V4a2 2 0 1 0-4 0v2" />
-                <rect width="8" height="5" x="14" y="6" rx="1" />
-              </svg>
-              <p className="text-gray-500 text-left">Global performance</p>
-            </div>
-            <p className="text-white text-left text-[16px] mt-5">
-              Automatically route traffic to over 100 edge locations around the globe, for a fast site, anywhere in the world.
-            </p>
-          </div>
+    <div className="m-16 p-20 border-gray-600 gap-32  w-[1079px] h-[578px] flex justify-between items-center border-[0.01px]">
+      <div className="left w-[442px] h-[481px]">
+        <div className="flex mr-24 gap-4 mb-2 ">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="gray"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            className="lucide lucide-rotate-cw">
+            <path d="M21 12a9 9 0 1 1-9-9c2.52 0 4.93 1 6.74 2.74L21 8" />
+            <path d="M21 3v5h-5" />
+          </svg>
+          <p className="opacity-90 text-gray-300">Instant Rollback</p>
         </div>
-      </motion.div>
+        <p className="text-white max-w-[442px] font-semibold text-[18px] mt-4">
+          Go ahead, deploy on Friday. <br />{" "}
+          <span className="text-gray-500 font-semibold">Instantly</span>
+          <span className="text-gray-500 font-semibold">
+            rollback to a working deployment.
+          </span>
+        </p>
+        <div className="mt-12">
+          <Image
+            src="/rollback.png"
+            alt="ship image"
+            width={444}
+            height={333}
+          />
+        </div>
+      </div>
+      <div className="right w-[539px] mt-20 h-[578px]">
+        <div className="flex mr-24 gap-4 mb-2 ">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="gray"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            className="lucide lucide-database-backup">
+            <ellipse cx="12" cy="5" rx="9" ry="3" />
+            <path d="M3 12a9 3 0 0 0 5 2.69" />
+            <path d="M21 9.3V5" />
+            <path d="M3 5v14a9 3 0 0 0 6.47 2.88" />
+            <path d="M12 12v4h4" />
+            <path d="M13 20a5 5 0 0 0 9-3 4.5 4.5 0 0 0-4.5-4.5c-1.33 0-2.54.54-3.41 1.41L12 16" />
+          </svg>
+          <p className="opacity-90 text-gray-300">Conformance</p>
+        </div>
+
+        <div>
+          <p className="text-white max-w-[442px] font-semibold text-[18px] mt-4">
+            Move fast, don’t break things. Keep <br />{" "}
+            <span className="text-gray-500 font-semibold">
+              quality high while maintaining velocity <br /> with Enterprise
+              Monorepos.
+            </span>{" "}
+            <br />
+          </p>
+        </div>
+
+        <div className="image mt-12">
+          <Image src="/owners.png" alt="ship image" width={442} height={301} />
+        </div>
+      </div>
     </div>
   );
 }
