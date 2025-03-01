@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Deploy() {
   return (
-    <div className="m-16 p-20 border-gray-600 gap-10  w-[1079px] h-[578px] flex justify-between items-center border-[0.01px]">
+    <div className="m-16 p-20 border-gray-600 gap-10  w-[1079px] h-[878px] flex justify-between items-center border-[0.01px]">
       <div className="first w-[358px] h-[709px] mt-[250px]">
         <h1 className="text-white mb-10 text-3xl">
           Deploy your first app in seconds
@@ -61,6 +61,9 @@ export default function Deploy() {
           className="cursor-pointer hover:border-amber-200"
         />
       </div>
+
+      
+
     </div>
   );
 }
