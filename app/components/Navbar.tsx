@@ -1,10 +1,10 @@
-import { Disclosure, DisclosureButton, DisclosurePanel, Menu,  MenuItem, MenuItems } from '@headlessui/react'
+import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuItem, MenuItems } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import Image from 'next/image'
 import Link from 'next/link'
 import { NavigationMenu1 } from './NavigationMenu'
 
-
+// Navigation links for the navbar
 const navigation = [
   { name: 'Dashboard', href: '#', current: true },
   { name: 'Team', href: '#', current: false },
@@ -12,18 +12,19 @@ const navigation = [
   { name: 'Calendar', href: '#', current: false },
 ]
 
-
+// Utility function to join class names conditionally
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(' ')
 }
 
+// Navbar component definition
 export default function Navbar() {
   return (
     <Disclosure as="nav" className="bg-black">
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="relative flex h-16 items-center justify-between">
+          {/* Mobile menu button */}
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
-            {/* Mobile menu button*/}
             <DisclosureButton className="group relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:ring-2 focus:ring-white focus:outline-hidden focus:ring-inset">
               <span className="absolute -inset-0.5" />
               <span className="sr-only">Open main menu</span>
@@ -31,38 +32,38 @@ export default function Navbar() {
               <XMarkIcon aria-hidden="true" className="hidden size-6 group-data-open:block" />
             </DisclosureButton>
           </div>
+          {/* Logo and navigation links */}
           <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
             <Link href="/">
-            <div className="flex gap-2 shrink-0 items-center">
-              <Image 
-              src="/vercel.svg"
-              alt="Vercel logo"
-              width={20}
-              height={20}
-              />
-              <p className='text-white text-2xl'>
-                Vercel
-              </p>
-            </div>
+              <div className="flex gap-2 shrink-0 items-center">
+                <Image 
+                  src="/vercel.svg"
+                  alt="Vercel logo"
+                  width={20}
+                  height={20}
+                />
+                <p className='text-white text-2xl'>
+                  Vercel
+                </p>
+              </div>
             </Link>
-          
             <div className="hidden sm:ml-6 sm:block">
               <div className="flex space-x-4">
-            <NavigationMenu1 />
+                <NavigationMenu1 />
               </div>
             </div>
           </div>
+          {/* Right side buttons and profile dropdown */}
           <div className="absolute inset-y-0 right-0 flex gap-4 items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-          <button className='text-white px-4 py-2 text-[12px] cursor-pointer hover:bg-white hover:text-black opacity-80 hidden lg:block border-gray-500 border-[0.1px] rounded-md'>
-               Log In
+            <button className='text-white px-4 py-2 text-[12px] cursor-pointer hover:bg-white hover:text-black opacity-80 hidden lg:block border-gray-500 border-[0.1px] rounded-md'>
+              Log In
             </button>
             <button className='text-white px-4 py-2 text-[12px] hover:bg-white hover:text-black cursor-pointer opacity-70 hidden lg:block border-gray-500 border-[0.1px] rounded-md'>
-               Contact
+              Contact
             </button>
-            <button className='text-black px-4 py-2 text-[12px] cursor-pointer font-semibold hidden lg:block bg-white hover:bg-gray-200  border-white border-[0.1px] rounded-md'>
-               Sign Up
+            <button className='text-black px-4 py-2 text-[12px] cursor-pointer font-semibold hidden lg:block bg-white hover:bg-gray-200 border-white border-[0.1px] rounded-md'>
+              Sign Up
             </button>
-
             {/* Profile dropdown */}
             <Menu as="div" className="relative ml-3">
               <MenuItems
@@ -98,7 +99,7 @@ export default function Navbar() {
           </div>
         </div>
       </div>
-
+      {/* Mobile menu panel */}
       <DisclosurePanel className="sm:hidden">
         <div className="space-y-1 ml-20 px-2 pt-2 pb-3">
           {navigation.map((item) => (

@@ -94,7 +94,7 @@ export default function Collaborative() {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="image mt-12"
         >
-          <Image src="/swap.png" alt="swap image" width={442} height={301} />
+          <Image src="/swap.png" alt="swap image" className="cursor-zoom-in" width={442} height={301} />
         </motion.div>
       </motion.div>
     </div>
