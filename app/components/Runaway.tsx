@@ -10,16 +10,16 @@ export default function Runaway() {
     <div className="bg-black flex flex-col lg:flex-row gap-4 lg:gap-40 m-32">
       {/* Right Section */}
       <motion.div
-        initial={{ opacity: 0, x: -50 }} // Initial animation state
-        whileInView={{ opacity: 1, x: 0 }} // Animation state when in view
-        transition={{ duration: 0.8, ease: "easeOut" }} // Animation duration and easing
-        viewport={{ once: true }} // Animate only once when in view
+        initial={{ opacity: 0, x: -50 }}
+        whileInView={{ opacity: 1, x: 0 }} 
+        transition={{ duration: 0.8, ease: "easeOut" }} 
+        viewport={{ once: true }} 
         className="right flex w-[919px] gap-10">
         <div className="flex flex-col gap-5">
           <motion.p
-            initial={{ opacity: 0, y: 20 }} // Initial animation state
-            whileInView={{ opacity: 1, y: 0 }} // Animation state when in view
-            transition={{ duration: 0.8, delay: 0.2 }} // Animation duration and delay
+            initial={{ opacity: 0, y: 20 }} 
+            whileInView={{ opacity: 1, y: 0 }} 
+            transition={{ duration: 0.8, delay: 0.2 }} 
             className="text-gray-500 leading-8 text-[22px]">
             <span className="font-extrabold text-[22px] text-white">
               run away
