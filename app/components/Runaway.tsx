@@ -57,7 +57,7 @@ export default function Runaway() {
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.6 }}
-          className="bg-white text-black flex cursor-pointer mt-5 justify-center items-center gap-2 px-6 py-2 rounded-4xl"
+          className="bg-white text-black flex cursor-pointer mt-5 justify-center items-center gap-6 px-8 py-3 text-[12px] font-semibold rounded-4xl"
         >
           Deploy AI Apps in seconds
           <Image src="/star.png" alt="star" height={20} width={20} />

@@ -64,7 +64,7 @@ export default function MainHero() {
 
             <Button1
               className="bg-white hover:border hover:border-white text-black p-4 rounded-4xl hover:bg-black hover:text-white"
-              title="Learn more"
+              title="Get a Demo"
             />
           </motion.div>
         </motion.div>
