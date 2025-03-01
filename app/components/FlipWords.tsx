@@ -8,7 +8,7 @@ export function FlipWords1() {
     <div className=" flex justify-center items-center px-4">
       <div className="text-2xl mx-auto font-normal text-white dark:text-neutral-400">
         Your
-        <FlipWords className="text-red-400" words={words} /> 
+        <FlipWords className="text-red-400" words={words} />
         your way
       </div>
     </div>
